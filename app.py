@@ -22,11 +22,12 @@ def add_item():
 @app.route("/success")
 def success():
     results = []
- 
     qry = db_session.query(Items)
     results = qry.all()
 
-    return str(results)
+    itemEntry = [f"id: {r.id}, name: {r.name}, quantity: {r.quantity}, description: {r.description}, date added: {r.date_added}" for r in results]
+
+    return str(itemEntry)
   
 
 if __name__ == '__main__':
