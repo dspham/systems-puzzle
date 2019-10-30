@@ -2,7 +2,7 @@
 
 ## My solution for [Insight's systems puzzle](https://github.com/InsightDataScience/systems-puzzle)
 
-### To Run:
+### Install:
 ```
 docker-compose up -d db
 
